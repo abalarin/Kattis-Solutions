@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Launch (Windows)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "symbolSearchPath": "C:\\Symbols;C:\\SymbolDir2",
+            "externalConsole": true,
+            "logging": {
+                "moduleLoad": false,
+                "trace": true
+                },
+            "visualizerFile": "${workspaceRoot}/my.natvis",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "program": "${workspaceRoot}/secure_doors.cpp"
+        },
+        {
+            "name": "C++ Attach (Windows)",
+            "type": "cppvsdbg",
+            "request": "attach",
+            "processId": "${command.pickProcess}"
+        }
+    ]
+}
